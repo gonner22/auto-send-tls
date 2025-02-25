@@ -25,16 +25,26 @@ Before using this script, ensure that you have the following:
    - Open the Start menu and search for **"Edit the system environment variables"**.  
    - In **System Variables**, find `Path`, edit it, and add `C:\telestai\bin`.  
 4. **Install Python**: Ensure Python is installed on your system. You can download it from [python.org](https://www.python.org/downloads/) and check the **"Add Python to PATH"** option during installation.  
-5. **Install Dependencies**: Use `pip` to install required Python packages:  
+5. **Clone the Repository**: Open **Command Prompt** and run the following command to clone the repository and navigate into the directory:
+   ```powershell
+   git clone https://github.com/gonner22/auto-send-tls
+   cd auto-send-tls
+   ```
+6. **Create and Activate Virtual Environment**: Run the following commands to create a virtual environment and activate it:
+   ```powershell
+   python -m venv venv
+   .\venv\Scripts\activate
+   ```
+7. **Install Dependencies**: Use `pip` to install required Python packages:  
    ```powershell
    pip install python-dotenv
    ```  
-6. **Configure .env File**: If necessary, edit the `.env` file to set up your environment variables. Use a text editor like Notepad to open and modify the file. Here are the variables you can configure:
+8. **Configure .env File**: If necessary, edit the `.env` file to set up your environment variables. Use a text editor like Notepad to open and modify the file. Here are the variables you can configure:
    - `MIN_CONF=1`: Minimum confirmations required for UTXOs. Default is 1.
    - `MAX_UTXOS=500`: Maximum number of UTXOs to consolidate. Default is 500.
    - `CONSOLIDATION_THRESHOLD=118`: Only consolidate UTXOs below this value (TLS). Default is 118.
    - `WALLET_ADDRESS_INDEX=0`: This index contains wallet addresses that have received at least one payment. Addresses without any transactions are excluded. Default is 0.
-7. **Run the Script**: Execute the script using Python:  
+9. **Run the Script**: Execute the script using Python:  
    ```powershell
    python auto-send.py
    ```  
@@ -61,16 +71,26 @@ Before using this script, ensure that you have the following:
    ```bash
    brew install python
    ```  
-5. **Install Dependencies**: Use `pip` to install required Python packages:  
+5. **Clone the Repository**: Open a **Terminal** and run the following command to clone the repository and navigate into the directory:
+   ```bash
+   git clone https://github.com/gonner22/auto-send-tls
+   cd auto-send-tls
+   ```
+6. **Create and Activate Virtual Environment**: Run the following commands to create a virtual environment and activate it:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+7. **Install Dependencies**: Use `pip` to install required Python packages:  
    ```bash
    pip install python-dotenv
    ```  
-6. **Configure .env File**: If necessary, edit the `.env` file to set up your environment variables. Use a text editor like nano or vim to open and modify the file. Here are the variables you can configure:
+8. **Configure .env File**: If necessary, edit the `.env` file to set up your environment variables. Use a text editor like nano or vim to open and modify the file. Here are the variables you can configure:
    - `MIN_CONF=1`: Minimum confirmations required for UTXOs. Default is 1.
    - `MAX_UTXOS=500`: Maximum number of UTXOs to consolidate. Default is 500.
    - `CONSOLIDATION_THRESHOLD=118`: Only consolidate UTXOs below this value (TLS). Default is 118.
    - `WALLET_ADDRESS_INDEX=0`: This index contains wallet addresses that have received at least one payment. Addresses without any transactions are excluded. Default is 0.
-7. **Run the Script**: Execute the script using Python:  
+9. **Run the Script**: Execute the script using Python:  
    ```bash
    python auto-send.py
    ```  
@@ -99,16 +119,26 @@ Before using this script, ensure that you have the following:
    sudo dnf install python3  # Fedora  
    sudo pacman -S python     # Arch  
    ```  
-5. **Install Dependencies**: Use `pip` to install required Python packages:  
+5. **Clone the Repository**: Open a **Terminal** and run the following command to clone the repository and navigate into the directory:
+   ```bash
+   git clone https://github.com/gonner22/auto-send-tls
+   cd auto-send-tls
+   ```
+6. **Create and Activate Virtual Environment**: Run the following commands to create a virtual environment and activate it:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+7. **Install Dependencies**: Use `pip` to install required Python packages:  
    ```bash
    pip install python-dotenv
    ```  
-6. **Configure .env File**: If necessary, edit the `.env` file to set up your environment variables. Use a text editor like nano or vim to open and modify the file. Here are the variables you can configure:
+8. **Configure .env File**: If necessary, edit the `.env` file to set up your environment variables. Use a text editor like nano or vim to open and modify the file. Here are the variables you can configure:
    - `MIN_CONF=1`: Minimum confirmations required for UTXOs. Default is 1.
    - `MAX_UTXOS=500`: Maximum number of UTXOs to consolidate. Default is 500.
    - `CONSOLIDATION_THRESHOLD=118`: Only consolidate UTXOs below this value (TLS). Default is 118.
    - `WALLET_ADDRESS_INDEX=0`: This index contains wallet addresses that have received at least one payment. Addresses without any transactions are excluded. Default is 0.
-7. **Run the Script**: Execute the script using Python:  
+9. **Run the Script**: Execute the script using Python:  
    ```bash
    python auto-send.py
    ```  
