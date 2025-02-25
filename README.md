@@ -27,7 +27,7 @@ Before using this script, ensure that you have the following:
 4. **Install Python**: Ensure Python is installed on your system. You can download it from [python.org](https://www.python.org/downloads/) and check the **"Add Python to PATH"** option during installation.  
 5. **Clone the Repository**: Open **Command Prompt** and run the following command to clone the repository and navigate into the directory:
    ```powershell
-   git clone https://github.com/gonner22/auto-send-tls
+   git clone https://github.com/Telestai-Project/auto-send-tls
    cd auto-send-tls
    ```
 6. **Create and Activate Virtual Environment**: Run the following commands to create a virtual environment and activate it:
@@ -73,7 +73,7 @@ Before using this script, ensure that you have the following:
    ```  
 5. **Clone the Repository**: Open a **Terminal** and run the following command to clone the repository and navigate into the directory:
    ```bash
-   git clone https://github.com/gonner22/auto-send-tls
+   git clone https://github.com/Telestai-Project/auto-send-tls
    cd auto-send-tls
    ```
 6. **Create and Activate Virtual Environment**: Run the following commands to create a virtual environment and activate it:
@@ -121,7 +121,7 @@ Before using this script, ensure that you have the following:
    ```  
 5. **Clone the Repository**: Open a **Terminal** and run the following command to clone the repository and navigate into the directory:
    ```bash
-   git clone https://github.com/gonner22/auto-send-tls
+   git clone https://github.com/Telestai-Project/auto-send-tls
    cd auto-send-tls
    ```
 6. **Create and Activate Virtual Environment**: Run the following commands to create a virtual environment and activate it:
